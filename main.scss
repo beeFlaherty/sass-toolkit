@@ -1,0 +1,31 @@
+// Reset css needs to go at the top!
+@import 'vendor/_meyer-reset.scss';
+
+//Variables and mixins import
+@import 'common/_base.scss';
+
+// Bootstrap 4 grid and utilities
+@import 'vendor/_bootstrap4-grid.scss';
+
+//example of custom container fluid
+.container-fluid {
+    max-width: $container-fluid-max-width;
+    padding: 0 $container-margin-xs;
+
+    @include media-breakpoint-up(sm) {
+        padding: 0 $container-margin-sm;
+    }
+
+    @include media-breakpoint-up(md) {
+        padding: 0 $container-margin-md;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: 0 $container-margin-lg;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: 0 $container-margin-xl;
+    }
+}
+
